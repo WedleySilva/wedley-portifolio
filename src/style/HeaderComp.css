@@ -6,13 +6,11 @@
 
 @media (max-width: 541px) {
   header {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 260px;
     background-color: #2b2a33;
-    z-index: 1000;
   }
 
   .text1Header {
@@ -23,7 +21,7 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin-top: 10%;
+    padding-top: 10%;
   }
 
   .h1Header {
