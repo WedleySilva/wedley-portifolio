@@ -1,5 +1,14 @@
 /* Dispositivos móveis */
 
 @media (max-width: 541px) {
-    
+   .compMain{
+   z-index: 999;
+    position: relative;
+    height: auto;
+    margin-top: 70%;
+   } 
+   .sobreMim{
+      color: #0000;
+      
+   }
 }
