@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+.sectorSobreMim {
+    background-color: #212121;
+}
+
+.titleSector {
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.textSobre {
+    padding-top: 40px;
+    font-size: 26px;
+    color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 100;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.bold {
+    font-weight: 300;
+    color: rgb(65, 172, 226);
+}
+
+.textSobre2 {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.divImagemSobre {
+    padding-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding-bottom: 5%;
+}
+
+.imagemSectorSobre {
+    height: 600px;
+    width: auto;
+    border-radius: 20px;
+}
+
+
