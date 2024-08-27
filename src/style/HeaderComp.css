@@ -2,68 +2,72 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 
 
-/* Dispositivos móveis */
+.headerComp {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  background-color: #2B2A33;
+}
 
-@media (max-width: 541px) {
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 260px;
-    background-color: #2b2a33;
-  }
+.headerLeft,
+.headerCenter,
+.headerRight {
+  flex: 1; 
+}
 
-  .text1Header {
-    color: #ffff;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 22px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10%;
-  }
+.headerLeft {
+  text-align: left;
+  padding-top: 10px;  
+  padding-left: 10px;
+}
 
-  .h1Header {
-    color: #ffff;
-    margin: 0;
-    font-family: "Roboto", sans-serif;
-    font-size: 60px;
-    font-weight: 600;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
 
-  .text2Header {
-    color: #ffff;
-    font-family: "Times New Roman", Times, serif;
-    margin-top: 0;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
+.text1Header {
+  color: #ffff;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  text-align: center;
+}
 
-  .iconsHeader {
-    color: #ffff;
-    justify-content: space-evenly;
-    align-items: center;
-    display: flex;
-    padding-bottom: 0;
-    text-decoration: none;
-  }
+.h1Header {
+  color: #ffff;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 90px;
+  font-weight: 600;
+  text-align: center;
+}
 
-  .githubIcon, .linkedinIcon {
-    font-size: 30px;
-    color: #ffff;
-  }
+.text2Header {
+  color: #ffff;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
 
-  .mailIcon {
-    font-size: 36px;
-    color: #ffff;
-  }
+.iconsHeader {
+  color: #ffff;
+  display: flex;
+  flex-direction: column; 
+  gap: 30px; 
+  align-items: left;
+  padding-left: 2%;
+  text-decoration: none;
+}
+
+.githubIcon, .linkedinIcon {
+  font-size: 45px;
+  color: #ffff;
+}
+
+.mailIcon {
+  font-size: 50px;
+  color: #ffff;
+}
+
+.githubIcon, .linkedinIcon, .mailIcon:hover {
+  text-decoration: none;
   
-  }
-
-                                            /* Adicionar Cursor Pointer nos Icons na versão de Desktops*/
+}
