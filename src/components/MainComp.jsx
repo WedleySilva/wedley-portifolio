@@ -1,17 +1,12 @@
 import "../style/MainComp.css";
+import SectorSobre from './sectors/SectorSobre';
 
-const MainComp = () => (
-    <main className="comp">
-    <section className="sobreMim">
-        <h1 className="h1Main">
-            Um pouco sobre mim
-        </h1>
-        <div className="textMain">
-        Olá, eu me chamo <strong>Wedley</strong>, tenho 19 anos de idade e<strong> amo programação</strong>
-        </div>
-    </section>
+function MainComp() {
+  return (
+    <main className="mainComp">
+      <SectorSobre />
     </main>
-
-);
+  );
+}
 
 export default MainComp;

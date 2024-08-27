@@ -1,14 +1,7 @@
-/* Dispositivos móveis */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 
-@media (max-width: 541px) {
-   .compMain{
-   z-index: 999;
-    position: relative;
-    height: auto;
-    margin-top: 70%;
-   } 
-   .sobreMim{
-      color: #0000;
-      
-   }
+main {
+    width: 100%;
+    margin: 0;
 }
