@@ -67,7 +67,10 @@
   color: #ffff;
 }
 
-.githubIcon, .linkedinIcon, .mailIcon:hover {
+.githubIcon:hover, .linkedinIcon:hover, .mailIcon:hover {
   text-decoration: none;
+  color: #41ace2;
+  transition: 1.2s;
+
   
 }
