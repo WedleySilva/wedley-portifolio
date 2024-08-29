@@ -28,7 +28,7 @@
 
 .bold {
     font-weight: 300;
-    color: rgb(65, 172, 226);
+    color: #41ace2;
 }
 
 .textSobre2 {
@@ -49,6 +49,12 @@
     height: 600px;
     width: auto;
     border-radius: 20px;
+}
+
+.imagemSectorSobre:hover{
+    transform:scale(1.1);
+    transition: 1.5s;
+    z-index: 2;
 }
 
 
