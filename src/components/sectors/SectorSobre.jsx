@@ -2,14 +2,13 @@ import '../../style/sectors/SectorSobre.css';
 
 const SectorSobre = () => (
     <sector className="sectorSobreMim">
-        <h2 className="titleSector">
-        Um pouco <br />
-        sobre mim
+        <h2 className="titleSobre">
+        Um pouco mais sobre mim
         </h2>
         <h3 className="textSobre">
-        Olá, eu me chamo <strong className='bold'>Wedley</strong>, tenho 19 <br /> anos de idade e <strong className='bold'>amo programação</strong>. <br />
+        Olá, eu me chamo <strong className='bold'>Wedley</strong>, tenho 19  anos de idade e <strong className='bold'>amo programação</strong>. 
         <div className="textSobre2">
-        Sou apaixonado por <strong className='bold'>softwares</strong> e <strong className='bold'>desenvolvimento</strong> de 
+        Sou apaixonado por <strong className='bold'>tecnologia</strong>, <strong className='bold'>softwares</strong> e <strong className='bold'>desenvolvimento</strong> de 
          soluções práticas, sendo assim programação é a minha área <strong className='bold'>profissional</strong> e meu <strong className='bold'>hobbie</strong>.
          </div>
         </h3>

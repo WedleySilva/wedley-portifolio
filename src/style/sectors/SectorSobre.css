@@ -5,7 +5,8 @@
     background-color: #212121;
 }
 
-.titleSector {
+.titleSobre {
+    padding-top: 2%;
     font-family: "Roboto", sans-serif;
     font-size: 40px;
     color: #ffffff;
@@ -18,12 +19,12 @@
     padding-top: 40px;
     font-size: 26px;
     color: #ffffff;
-    text-align: center;
+    text-align: justify;
     justify-content: center;
     font-family: "Times New Roman", Times, serif;
     font-weight: 100;
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-left: 35%;
+    padding-right: 35%;
 }
 
 .bold {
@@ -32,8 +33,9 @@
 }
 
 .textSobre2 {
-    text-align: center;
-    padding-top: 5%;
+    text-align: justify;
+    padding-top: 15%;
+
 }
 
 .divImagemSobre {
@@ -46,7 +48,8 @@
 }
 
 .imagemSectorSobre {
-    height: 600px;
+    cursor: pointer;
+    height: 400px;
     width: auto;
     border-radius: 20px;
 }
