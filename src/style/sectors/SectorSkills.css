@@ -7,6 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .expSkills,
@@ -53,15 +54,10 @@
 }
 
 .cvComp {
+  cursor: pointer;
   align-items: center;
   display: flex;
   padding-left: 25%;
-}
-
-.cvButton:hover {
-  background-color: #ffff;
-  color: #212121;
-  transition: 1.1s;
 }
 
 .cvButton {
@@ -75,6 +71,12 @@
   text-align: center;
 }
 
+.cvButton:hover {
+  background-color: #ffff;
+  color: #212121;
+  transition: 1.1s;
+}
+
 .downloadIcon {
   padding-right: 10px;
   font-size: 22px;
@@ -85,9 +87,11 @@
   padding: 20px;
   border-radius: 8px;
   border: 1px solid #ffffff;
-  color: #ffffff;
+  color: #41ace2;
   margin: 15px 0;
   font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
   line-height: 1.6;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
