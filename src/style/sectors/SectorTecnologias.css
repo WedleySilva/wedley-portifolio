@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+.sectorTecnologias {
+    background-color: #18181E;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    min-height: 100vh; 
+}
+
+.titleTecnologias {
+    color: #ffff;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px; 
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+.textTecnologias {
+    color: #41ace2;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    margin-bottom: 40px; 
+}
+
+.tecnologias {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    align-items: center; 
+}
+
+.tecnologias h2 {
+    color: #ffff;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.prototipagemDiv, .backendDiv, .frontendDiv {
+    border-radius: 10px;
+    background-color: #2B2A33;
+    padding: 5px 10px 10px 10px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconsPrototipagem, .iconsBackend, .iconsFrontend {
+    color: #ffff;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tecnologiaItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.tecnologiaRow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tecnologiaText {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.vueDiv, .reactDiv, .reactnativeDiv, .htmlDiv, .cssDiv, .javascriptDiv, .mysqlDiv, .djangoDiv, .pythonDiv, .figmaDiv, .canvaDiv, .miroDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.vuePct, .reactPct, .reactnativePct, .htmlPct, .cssPct, .javascriptPct, .mysqlPct, .djangoPct, .pythonPct, .canvaPct, .figmaPct, .miroPct {
+    color: #41ace2;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 5px;
+}
