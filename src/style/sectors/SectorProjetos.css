@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+.sectorProjetos {
+  background-color: #2b2a33;
+  margin-bottom: 0;
+  padding-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tituloProjetos {
+  color: #ffff;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+
+.textoProjetos {
+  color: #41ace2;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  margin-bottom: 40px;
+}
+
+.carrossel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.seta {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  margin: 0 20px;
+}
+
+.conteudoCarrossel {
+  position: relative;
+  width: 500px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.textoAcima {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.tituloProjeto {
+  color: #fff;
+  font-size: 36px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.descricaoProjeto {
+  color: #41ace2;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: justify;
+}
+
+.imagemProjeto {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  border: 2px solid;
+  border-radius: 8px;
+  margin-bottom: 5%;
+}
+
+.statusProjeto {
+  font-style: italic;
+  font-size: 18px;
+  margin-bottom: 5px;
+  margin-top: 50px;
+}
+
+.statusProjeto[data-status="Em Refatoração"] {
+  color: #FB8800;
+}
+
+.statusProjeto[data-status="Em Desenvolvimento"] {
+  color: #0083FB;
+}
+
+.statusProjeto[data-status="Concluído"] {
+  color: #00C543;
+}
+
+.textoAbaixo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iconsProjeto {
+  display: flex;
+  justify-content: center;
+  gap: 100%;
+  font-size: 30px;
+}
+
+.icone {
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #ffff; 
+}
+
+.tipoProjeto {
+  color: #fff;
+  font-size: 20px;
+}
+
+.setaEsquerda {
+  transform: rotate(-90deg);
+}
+
+.setaDireita {
+  transform: rotate(90deg);
+}
+
+.setaIcone:hover, .githubIconProj:hover, .vercelIconProj:hover, .reactIconProj:hover, .vueIconProj:hover, .djangobIconProj:hover, .reactNativebIconProj:hover{
+    color: #41ace2;
+    transition: 1.2s;
+}

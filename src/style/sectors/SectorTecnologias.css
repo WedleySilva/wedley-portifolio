@@ -4,6 +4,7 @@
 .sectorTecnologias {
     background-color: #18181E;
     margin-bottom: 0;
+    padding-bottom: 5%;
     display: flex;
     flex-direction: column;
     align-items: center; 
