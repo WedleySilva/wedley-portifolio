@@ -14,6 +14,7 @@ const dadosProjetos = [
     tipo: "Acadêmico",
     imageUrl: "./src/media/wether_api_screen.png",
     icons: ["github", "vercel", "vue", "django"],
+    link: "https://wether-project-vue.vercel.app",
   },
   {
     titulo: "Solve4u - Sistema Web",
@@ -22,6 +23,7 @@ const dadosProjetos = [
     tipo: "Pessoal",
     imageUrl: "./src/media/solve4u_screen.png",
     icons: ["github", "vercel", "react"],
+    link: "https://solve4u.vercel.app/",
   },
   {
     titulo: "Espaço Innovar  App",
@@ -84,12 +86,14 @@ const SectorProjetos = () => {
             <h3 className="tituloProjeto">{projetoAtual.titulo}</h3>
             <p className="descricaoProjeto">{projetoAtual.desc}</p>
           </div>
-          <img
-            src={projetoAtual.imageUrl}
-            alt={projetoAtual.titulo}
-            className="imagemProjeto"
-            style={{ borderColor: obterCorBorda(projetoAtual.status) }}
-          />
+          <a href={projetoAtual.link} target="_blank" rel="noopener noreferrer">
+            <img
+              src={projetoAtual.imageUrl}
+              alt={projetoAtual.titulo}
+              className="imagemProjeto"
+              style={{ borderColor: obterCorBorda(projetoAtual.status) }}
+            />
+          </a>
 
           <div className="textoAbaixo">
             <div className="iconsProjeto">
