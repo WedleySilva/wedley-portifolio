@@ -3,6 +3,7 @@ import SectorSobre from './sectors/SectorSobre';
 import SectorSkills from './sectors/SectorSkills';
 import SectorTecnologias from './sectors/SectorTecnologias';
 import SectorProjetos from './sectors/SectorProjetos';
+import SectorContato from './sectors/SectorContato';
 
 function MainComp() {
   return (
@@ -11,6 +12,7 @@ function MainComp() {
       <SectorSkills />
       <SectorTecnologias />
       <SectorProjetos />
+      <SectorContato />
     </main>
   );
 }
