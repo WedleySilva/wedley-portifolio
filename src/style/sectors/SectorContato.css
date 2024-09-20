@@ -1,0 +1,198 @@
+.sectorContato {
+    background-color: #212121;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    min-height: 100vh;
+  }
+  
+  .contatotextDiv {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .contatoTitle {
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  .contatoSubtitle {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #41ace2;
+    margin-top: 10px;
+  }
+  
+  .contatoBox {
+    display: flex;
+    background-color: #2B2A33;
+    border-radius: 10px;
+    width: 50%;
+    height: 400px;
+    min-width: 400px;
+  }
+  
+  .contatoImg {
+    height: 100%;
+    width: auto;
+    margin-right: 5%;
+    padding-left: 5%;
+    object-fit: cover;
+  }
+  
+  .contatoText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding-right: 5%;
+  }
+  
+  .boxTitle {
+    font-family: "Roboto", sans-serif;
+    font-size: 34px;
+    text-align: center;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  .boxsubtitle {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+    color: #ffffff;
+    margin-top: 0px; 
+  }
+  
+  .contatoIcons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+
+  }
+  
+  .githubIconContato, .linkedinIconContato, .mailIconContato {
+    font-size: 40px;
+    color: #ffffff;
+    transition: color 0.3s;
+  }
+
+  .linkedinIconContato, .mailIconContato {
+    padding-left: 10%;
+  }
+  
+  .githubIconContato:hover, .linkedinIconContato:hover, .mailIconContato:hover {
+    color: #41ace2;
+  }
+  
+  .infoContato {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;;
+    margin-top: 5%;
+    gap: 15px;
+    
+  }
+  
+  .contatoLocal, .contatoPhone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+    justify-content: center;
+  }
+  
+  .localIcon, .phoneIcon {
+    font-size: 20px;
+  }
+  
+  .contatoForm {
+    display: flexbox;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%; 
+    margin-top: 40px;
+  }
+
+  .nomeEmpresaDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .nomeContato, .emailContato {
+    width: 40%;
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    background-color: #212121;
+    color: #ffffff; 
+  }
+  
+  .mensagemContato {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    height: 150px; 
+    background-color: #212121;
+    color: #ffffff; 
+  }
+  
+  .nomeContato:focus, .emailContato:focus, .mensagemContato:focus {
+    outline: none;
+  }
+
+  .contatoFormRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sendButtonRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sendButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 15px 20px; 
+    background-color: #212121   ;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid #ffffff;
+
+  }
+
+  .sendIcon {
+    font-size: 24px;
+    padding-right: 10px;
+    color: #ffffff;
+  }
+  
+  input::placeholder, textarea::placeholder {
+    color: #ffff;
+  }
+  
+  
