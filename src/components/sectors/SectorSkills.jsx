@@ -12,6 +12,13 @@ const SectorSkills = () => {
   const toggleHard = () => setIsHardOpen(!isHardOpen);
   const toggleSoft = () => setIsSoftOpen(!isSoftOpen);
 
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/docs/seu_cv.pdf"; 
+    link.download = "meu_cv.pdf"; 
+    link.click();
+  };
+
   return (
     <div className="sectorSkills">
       <div className="divSkills">
@@ -23,7 +30,7 @@ const SectorSkills = () => {
           <div className="expContent boxContent">
             <p>- 4,5 anos de estudo na programação;</p>
             <p>- Cursando Engenharia de Software;</p>
-            <p>- Curso Técnico em desenvolvimento de Software;</p>
+            <p>- Curso Técnico em Desenvolvimento de Software;</p>
           </div>
         )}
 
@@ -33,9 +40,9 @@ const SectorSkills = () => {
         </div>
         {isHardOpen && (
           <div className="hardContent boxContent">
-            <p>- Prototipagem de telas e modelagem de dados;</p>
+            <p>- Prototipagem de telas e Modelagem de Dados;</p>
             <p>- Desenvolvimento Full Stack;</p>
-            <p>- Aplicações para dispositivos móveis e web.</p>
+            <p>- Aplicações para Dispositivos Móveis e Web.</p>
           </div>
         )}
 
@@ -51,9 +58,8 @@ const SectorSkills = () => {
           </div>
         )}
 
-        {/* Botão para download de CV */}
         <div className="cvComp">
-          <div className="cvButton">
+          <div className="cvButton" onClick={handleDownload}>
             <TbDownload className="downloadIcon" /> Baixar CV
           </div>
         </div>
