@@ -15,6 +15,7 @@ const dadosProjetos = [
     imageUrl: "https://firebasestorage.googleapis.com/v0/b/wedley-portifolio.appspot.com/o/Projetos%2Fwether_api_screen.png?alt=media&token=e03eb1e0-1694-47ad-8c93-b96c3193ead2",
     icons: ["github", "vercel", "vue", "django"],
     link: "https://wether-project-vue.vercel.app",
+    githubRepo: "https://github.com/WedleySilva/projeto-api-vue"
   },
   {
     titulo: "Solve4u - Sistema Web",
@@ -24,6 +25,7 @@ const dadosProjetos = [
     imageUrl: "https://firebasestorage.googleapis.com/v0/b/wedley-portifolio.appspot.com/o/Projetos%2Fsolve4u_screen.png?alt=media&token=c9bab49d-8f62-4a94-9701-5d3b5c8e4bf9",
     icons: ["github", "vercel", "react"],
     link: "https://solve4u.vercel.app/",
+    githubRepo: "https://github.com/GuilhermeHalter/Solve4u"
   },
   {
     titulo: "Espaço Innovar  App",
@@ -32,8 +34,10 @@ const dadosProjetos = [
     tipo: "Pessoal",
     imageUrl: "https://firebasestorage.googleapis.com/v0/b/wedley-portifolio.appspot.com/o/Projetos%2Fespaco_innovar_screen.png?alt=media&token=217dd6b6-e3d4-482d-8aac-e637a1a55e9f",
     icons: ["github", "reactNative", "django"],
+    githubRepo: "https://github.com/WedleySilva/frontend-innovar-react-native"
   },
 ];
+
 
 const SectorProjetos = () => {
   const [indiceProjetoAtual, setIndiceProjetoAtual] = useState(0);
@@ -75,12 +79,12 @@ const SectorProjetos = () => {
     <div className="sectorProjetos">
       <h2 className="tituloProjetos">Meus projetos</h2>
       <p className="textoProjetos">Projetos pessoais e acadêmicos.</p>
-
+  
       <div className="carrossel">
         <button className="seta setaEsquerda" onClick={projetoAnterior}>
           <IoIosArrowUp className="setaIcone" />
         </button>
-
+  
         <div className="conteudoCarrossel">
           <div className="textoAcima">
             <h3 className="tituloProjeto">{projetoAtual.titulo}</h3>
@@ -94,7 +98,7 @@ const SectorProjetos = () => {
               style={{ borderColor: obterCorBorda(projetoAtual.status) }}
             />
           </a>
-
+  
           <div className="textoAbaixo">
             <div className="iconsProjeto">
               {projetoAtual.icons.map((icone, index) => (
@@ -103,11 +107,23 @@ const SectorProjetos = () => {
                 </span>
               ))}
             </div>
-            <p className="statusProjeto" data-status={projetoAtual.status}>{projetoAtual.status}</p>
+            <p className="statusProjeto" data-status={projetoAtual.status}>
+              {projetoAtual.status}
+            </p>
             <p className="tipoProjeto">{projetoAtual.tipo}</p>
+            {projetoAtual.githubRepo && (
+              <a
+                href={projetoAtual.githubRepo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="githubButton"
+              >
+                <FaGithub className="githubIconProj" /> Ver Repositório
+              </a>
+            )}
           </div>
         </div>
-
+  
         <button className="seta setaDireita" onClick={projetoProximo}>
           <IoIosArrowUp className="setaIcone" />
         </button>
