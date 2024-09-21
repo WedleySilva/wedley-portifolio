@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const Header = () => (
-  <header className='headerComp'>
+  <header className='headerComp' id="home">
 
     <div className="headerLeft">
     <div className="iconsHeader">

@@ -76,7 +76,7 @@ const SectorProjetos = () => {
   };
 
   return (
-    <div className="sectorProjetos">
+    <div className="sectorProjetos" id="sector-projetos">
       <h2 className="tituloProjetos">Meus projetos</h2>
       <p className="textoProjetos">Projetos pessoais e acadêmicos.</p>
   

@@ -9,7 +9,7 @@ import { FaCss3Alt } from "react-icons/fa";
 import { RiJavascriptFill } from "react-icons/ri";
 
 const SectorTecnologias = () => (
-  <div className="sectorTecnologias">
+  <div className="sectorTecnologias" id="sector-skills">
     <h2 className="titleTecnologias">
       Como eu <br />
       trabalho?

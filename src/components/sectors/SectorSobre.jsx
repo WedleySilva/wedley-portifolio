@@ -1,7 +1,7 @@
 import '../../style/sectors/SectorSobre.css';
 
 const SectorSobre = () => (
-    <sector className="sectorSobreMim">
+    <section id="sector-sobre" className="sectorSobreMim">
         <h2 className="titleSobre">
         Um pouco mais sobre mim
         </h2>
@@ -15,8 +15,7 @@ const SectorSobre = () => (
         <div className='divImagemSobre'>
             <img  className="imagemSectorSobre" src="https://firebasestorage.googleapis.com/v0/b/wedley-portifolio.appspot.com/o/Fotos%2FWedley_Schmoeller.png?alt=media&token=0a20e424-158d-41bb-8f4e-ac23d399770e" alt="Wedley Silva Schmoeller" />
         </div>
-
-    </sector>
+    </section>
 );
 
 export default SectorSobre;

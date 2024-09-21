@@ -18,7 +18,7 @@ const SectorContato = () => {
   };
 
   return (
-    <section className="sectorContato">
+    <section className="sectorContato" id="sector-contato">
       <div className="contatotextDiv">
         <h1 className="contatoTitle">Entre em contato</h1>
         <p className="contatoSubtitle">Ficou interessado? Vamos conversar!</p>
