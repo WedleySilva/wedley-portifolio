@@ -33,9 +33,9 @@
     display: flex;
     background-color: #2B2A33;
     border-radius: 10px;
-    width: 50%;
+    width: 60%;
     height: 400px;
-    min-width: 400px;
+    min-width: 600px;
   }
   
   .contatoImg {
@@ -127,6 +127,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    gap: 20px;
   }
   
   .nomeContato, .emailContato {
@@ -140,21 +141,32 @@
     background-color: #212121;
     color: #ffffff; 
   }
+
+  .mensagemDiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
   
   .mensagemContato {
-    width: 100%;
     padding: 15px;
+    width: 100%;
     border: 1px solid #ffffff;
     border-radius: 5px;
     font-size: 16px;
     font-family: 'Lato', sans-serif;
-    height: 150px; 
+    min-height: 200px; 
     background-color: #212121;
     color: #ffffff; 
   }
   
   .nomeContato:focus, .emailContato:focus, .mensagemContato:focus {
     outline: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .nomeContato:focus::placeholder, .emailContato:focus::placeholder, .mensagemContato:focus::placeholder {
+    opacity: 0;
   }
 
   .contatoFormRow {
@@ -183,7 +195,6 @@
     margin-top: 3%;
     transition: 0.3s;
     border: 1px solid #ffffff;
-
   }
 
   .sendButton:hover {
@@ -201,6 +212,106 @@
   input::placeholder, textarea::placeholder {
     color: #ffff;
   }
+
+  /* 
+                                 <---------------- Tablet ---------------->
+*/
+
+@media only screen and (min-width: 541px) and (max-width: 768px) {
+  
+  .contatoBox {
+    display: flex;
+    background-color: #2B2A33;
+    border-radius: 10px;
+    width: 80%;
+    height: 300px;
+    min-width: 400px;
+  }
+  
+  .boxTitle {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  .boxsubtitle {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    color: #ffffff;
+    margin-top: 0px; 
+  }
+  
+  .contatoIcons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+  }
+
+  .githubIconContato, .linkedinIconContato, .mailIconContato {
+    font-size: 20px;
+    color: #ffffff;
+    transition: color 0.3s;
+  }
+
+  .localIcon, .phoneIcon {
+    font-size: 14px;
+  }
+
+  .nomeContato, .emailContato {
+    min-width: 150px;
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    background-color: #212121;
+    color: #ffffff; 
+  }
+
+  .nomeContato, .emailContato, .mensagemContato {
+    font-size: 12px;
+  }
+  .mensagemDiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .sendButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    padding: 15px 20px; 
+    background-color: #212121;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 3%;
+    transition: 0.3s;
+    border: 1px solid #ffffff;
+  }
+
+  .sendButton:hover {
+    background-color: #18181E;
+    transition: 0.3s;
+    width: 120px;
+  }
+
+  .sendIcon {
+    font-size: 20px;
+    padding-right: 10px;
+    color: #ffffff;
+  }
+
+
+}
   
   
   

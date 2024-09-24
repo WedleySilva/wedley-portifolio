@@ -1,4 +1,5 @@
 .header {
+    cursor: pointer;
     position: fixed;
     top: -80px; 
     left: 0;
@@ -55,4 +56,26 @@
 .sectorList p:hover {
     color: #41ace2;
     transition: 0.3s;
+}
+
+  /* 
+                                 <---------------- Tablet ---------------->
+*/
+
+@media only screen and (min-width: 541px) and (max-width: 768px) {
+    .sectorList {
+        display: flex;
+        gap: 20px; 
+        margin-right: 10%;
+    }
+}
+
+  /* 
+                                 <---------------- Mobile ---------------->
+*/
+
+@media only screen and (min-width: 320px) and (max-width: 541px) {
+    .header {
+        display: none;
+    }
 }

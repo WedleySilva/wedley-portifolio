@@ -93,6 +93,7 @@ const SectorContato = () => {
           />
         </div>
 
+        <div className="mensagemDiv">
         <textarea
           name="message"
           id="mensagem"
@@ -100,6 +101,7 @@ const SectorContato = () => {
           placeholder="Mensagem: "
           required
         ></textarea>
+        </div>
 
         <div className="sendButtonRow">
           <button type="submit" className="sendButton">

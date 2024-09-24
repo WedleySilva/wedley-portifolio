@@ -2,62 +2,82 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 
 .sectorSobreMim {
-    background-color: #212121;
+  background-color: #212121;
 }
 
 .titleSobre {
-    padding-top: 2%;
-    font-family: "Roboto", sans-serif;
-    font-size: 40px;
-    color: #ffffff;
-    text-align: center;
-    justify-content: center;
-
+  padding-top: 2%;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
 }
 
 .textSobre {
-    padding-top: 40px;
-    font-size: 26px;
-    color: #ffffff;
-    text-align: justify;
-    justify-content: center;
-    font-family: "Times New Roman", Times, serif;
-    font-weight: 100;
-    padding-left: 35%;
-    padding-right: 35%;
+  padding-top: 40px;
+  font-size: 26px;
+  color: #ffffff;
+  text-align: justify;
+  justify-content: center;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 100;
+  padding-left: 35%;
+  padding-right: 35%;
 }
 
 .bold {
-    font-weight: 300;
-    color: #41ace2;
+  font-weight: 300;
+  color: #41ace2;
 }
 
 .textSobre2 {
-    text-align: justify;
-    padding-top: 15%;
-
+  text-align: justify;
+  padding-top: 15%;
 }
 
 .divImagemSobre {
-    padding-top: 5%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    padding-bottom: 5%;
+  padding-top: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5%;
 }
 
 .imagemSectorSobre {
+  cursor: pointer;
+  height: 400px;
+  width: auto;
+  border-radius: 20px;
+}
+
+.imagemSectorSobre:hover {
+  transform: scale(1.1);
+  transition: 1.5s;
+  z-index: 2;
+}
+
+/* 
+                                 <---------------- Tablet ---------------->
+*/
+
+@media only screen and (min-width: 541px) and (max-width: 768px) {
+
+  .titleSobre {
+    font-size: 30px;
+  }
+
+  .textSobre {
+    font-size: 26px;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .imagemSectorSobre {
     cursor: pointer;
     height: 400px;
     width: auto;
     border-radius: 20px;
+  }
 }
-
-.imagemSectorSobre:hover{
-    transform:scale(1.1);
-    transition: 1.5s;
-    z-index: 2;
-}
-
-
