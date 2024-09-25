@@ -5,6 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import { SiVercel, SiDjango, SiReact } from "react-icons/si";
 import { IoLogoVue } from "react-icons/io5";
 import { TbBrandReactNative } from "react-icons/tb";
+import { useSwipeable } from "react-swipeable";
 
 const dadosProjetos = [
   {
@@ -12,32 +13,34 @@ const dadosProjetos = [
     desc: "Site de pesquisa e exibição de clima de várias cidades pelo mundo.",
     status: "Em Refatoração",
     tipo: "Acadêmico",
-    imageUrl: "https://firebasestorage.googleapis.com/v0/b/wedley-portifolio.appspot.com/o/Projetos%2Fwether_api_screen.png?alt=media&token=e03eb1e0-1694-47ad-8c93-b96c3193ead2",
+    imageUrl:
+      "https://firebasestorage.googleapis.com/v0/b/wedley-portifolio.appspot.com/o/Projetos%2Fwether_api_screen.png?alt=media&token=e03eb1e0-1694-47ad-8c93-b96c3193ead2",
     icons: ["github", "vercel", "vue", "django"],
     link: "https://wether-project-vue.vercel.app",
-    githubRepo: "https://github.com/WedleySilva/projeto-api-vue"
+    githubRepo: "https://github.com/WedleySilva/projeto-api-vue",
   },
   {
     titulo: "Solve4u - Sistema Web",
     desc: "Plataforma online desenvolvida para agilizar a gestão de projetos, proporcionando uma abordagem organizada e eficiente na coordenação de tarefas e membros da equipe.",
     status: "Em Desenvolvimento",
     tipo: "Pessoal",
-    imageUrl: "https://firebasestorage.googleapis.com/v0/b/wedley-portifolio.appspot.com/o/Projetos%2Fsolve4u_screen.png?alt=media&token=c9bab49d-8f62-4a94-9701-5d3b5c8e4bf9",
+    imageUrl:
+      "https://firebasestorage.googleapis.com/v0/b/wedley-portifolio.appspot.com/o/Projetos%2Fsolve4u_screen.png?alt=media&token=c9bab49d-8f62-4a94-9701-5d3b5c8e4bf9",
     icons: ["github", "vercel", "react"],
     link: "https://solve4u.vercel.app/",
-    githubRepo: "https://github.com/GuilhermeHalter/Solve4u"
+    githubRepo: "https://github.com/GuilhermeHalter/Solve4u",
   },
   {
     titulo: "Espaço Innovar  App",
     desc: "Aplicativo que gerencia agenda e organiza para uma cliníca de estética.",
     status: "Concluído",
     tipo: "Pessoal",
-    imageUrl: "https://firebasestorage.googleapis.com/v0/b/wedley-portifolio.appspot.com/o/Projetos%2Fespaco_innovar_screen.png?alt=media&token=217dd6b6-e3d4-482d-8aac-e637a1a55e9f",
+    imageUrl:
+      "https://firebasestorage.googleapis.com/v0/b/wedley-portifolio.appspot.com/o/Projetos%2Fespaco_innovar_screen.png?alt=media&token=217dd6b6-e3d4-482d-8aac-e637a1a55e9f",
     icons: ["github", "reactNative", "django"],
-    githubRepo: "https://github.com/WedleySilva/frontend-innovar-react-native"
+    githubRepo: "https://github.com/WedleySilva/frontend-innovar-react-native",
   },
 ];
-
 
 const SectorProjetos = () => {
   const [indiceProjetoAtual, setIndiceProjetoAtual] = useState(0);
@@ -59,32 +62,39 @@ const SectorProjetos = () => {
   const obterIcone = (nome) => {
     switch (nome) {
       case "github":
-        return <FaGithub className="githubIconProj"/>;
+        return <FaGithub className="githubIconProj" />;
       case "vercel":
-        return <SiVercel className="vercelIconProj"/>;
-        case "react":
-        return <SiReact className="reactIconProj"/>;
+        return <SiVercel className="vercelIconProj" />;
+      case "react":
+        return <SiReact className="reactIconProj" />;
       case "vue":
-        return <IoLogoVue className="vueIconProj"/>;
+        return <IoLogoVue className="vueIconProj" />;
       case "django":
-        return <SiDjango className="djangobIconProj"/>;
-        case "reactNative":
-            return <TbBrandReactNative className="reactNativebIconProj"/>
+        return <SiDjango className="djangobIconProj" />;
+      case "reactNative":
+        return <TbBrandReactNative className="reactNativebIconProj" />;
       default:
         return null;
     }
   };
 
+  const handlers = useSwipeable({
+    onSwipedLeft: projetoProximo,
+    onSwipedRight: projetoAnterior,
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true,
+  });
+
   return (
     <div className="sectorProjetos" id="sector-projetos">
       <h2 className="tituloProjetos">Meus projetos</h2>
       <p className="textoProjetos">Projetos pessoais e acadêmicos.</p>
-  
-      <div className="carrossel">
+
+      <div className="carrossel" {...handlers}>
         <button className="seta setaEsquerda" onClick={projetoAnterior}>
           <IoIosArrowUp className="setaIcone" />
         </button>
-  
+
         <div className="conteudoCarrossel">
           <div className="textoAcima">
             <h3 className="tituloProjeto">{projetoAtual.titulo}</h3>
@@ -98,7 +108,6 @@ const SectorProjetos = () => {
               style={{ borderColor: obterCorBorda(projetoAtual.status) }}
             />
           </a>
-  
           <div className="textoAbaixo">
             <div className="iconsProjeto">
               {projetoAtual.icons.map((icone, index) => (
@@ -107,6 +116,7 @@ const SectorProjetos = () => {
                 </span>
               ))}
             </div>
+      
             <p className="statusProjeto" data-status={projetoAtual.status}>
               {projetoAtual.status}
             </p>
@@ -123,7 +133,7 @@ const SectorProjetos = () => {
             )}
           </div>
         </div>
-  
+
         <button className="seta setaDireita" onClick={projetoProximo}>
           <IoIosArrowUp className="setaIcone" />
         </button>

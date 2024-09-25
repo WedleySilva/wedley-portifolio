@@ -3,7 +3,7 @@ import '../../style/sectors/SectorSobre.css';
 const SectorSobre = () => (
     <section id="sector-sobre" className="sectorSobreMim">
         <h2 className="titleSobre">
-        Um pouco mais sobre mim
+        Um pouco mais <br /> sobre mim
         </h2>
         <h3 className="textSobre">
         Olá, meu nome é <strong className='bold'>Wedley Silva Schmoeller</strong>, tenho 19  anos de idade e <strong className='bold'>amo programação</strong>. 

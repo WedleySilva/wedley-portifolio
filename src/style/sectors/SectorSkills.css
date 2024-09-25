@@ -99,3 +99,58 @@
 .boxContent p {
   margin: 10px 0;
 }
+
+/* 
+                                 <---------------- Mobile ---------------->
+*/
+
+@media only screen and (min-width: 320px) and (max-width: 541px) {
+
+  .expSkills,
+.hardSkills,
+.softSkills {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  border-radius: 5px;
+  font-size: 22px;
+  width: 260px;
+  margin-bottom: 30px;
+  padding: 2px 20px; 
+  border: #ffff solid 1px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.downloadIcon {
+  padding-right: 10px;
+  font-size: 18px;
+}
+
+.cvButton {
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 5px;
+  width: 160px;
+  margin-bottom: 30px;
+  padding: 10px 0px;
+  border: #ffff solid 1px;
+  text-align: center;
+}
+
+.boxContent {
+  background-color: #18181e;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ffffff;
+  color: #41ace2;
+  margin: 15px 0;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  width: 260px;
+  line-height: 1.6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+}

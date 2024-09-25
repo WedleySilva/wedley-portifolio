@@ -98,3 +98,38 @@
     font-size: 18px;
     margin-top: 5px;
 }
+
+/* 
+                                 <---------------- Mobile ---------------->
+*/
+
+@media only screen and (min-width: 320px) and (max-width: 541px) {
+
+    .titleTecnologias {
+      font-size: 26px;
+    }
+
+    .textTecnologias {
+        font-size: 16px;
+    }
+
+    .tecnologias h2 {
+        color: #ffff;
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .prototipagemDiv, .backendDiv, .frontendDiv {
+        border-radius: 10px;
+        background-color: #2B2A33;
+        padding: 5px 10px 10px 10px;
+        width: 260px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}

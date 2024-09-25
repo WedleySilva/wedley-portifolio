@@ -56,3 +56,38 @@
   padding: 5px 0; 
   margin: 0; 
 }
+
+
+/* 
+                                 <---------------- Mobile ---------------->
+*/
+
+@media only screen and (min-width: 320px) and (max-width: 541px) {
+
+  .h1Footer {
+    color: #ffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 70px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0; 
+  }
+
+  .textFooter {
+    color: #ffff;
+    font-size: 14px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0; 
+  }
+
+  .githubIcon, .linkedinIcon, .mailIcon {
+    font-size: 30px; 
+    color: #ffff;
+  }
+
+  .text2Footer {
+    font-size: 12px;
+  }
+}

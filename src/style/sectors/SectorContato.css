@@ -310,7 +310,160 @@
     color: #ffffff;
   }
 
+}
 
+/* 
+                                 <---------------- Mobile ---------------->
+*/
+
+@media only screen and (min-width: 320px) and (max-width: 541px) {
+
+  .contatoBox {
+    display: flex;
+    background-color: #2B2A33;
+    border-radius: 10px;
+    height: 300px;
+    min-width: 260px;
+    overflow: hidden;
+    padding-right: 15%;
+  }
+
+  .contatoImg {
+    width: auto; 
+    height: 100%; 
+    object-fit: cover; 
+    object-position: left; 
+    margin-left: -50px
+  }
+
+  .contatoText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .contatoTitle {
+    font-family: "Roboto", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  .boxTitle {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  .boxsubtitle {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+    margin-top: 0px; 
+  }
+
+  .contatoIcons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+  }
+
+  .githubIconContato, .linkedinIconContato, .mailIconContato {
+    font-size: 16px;
+    color: #ffffff;
+    transition: color 0.3s;
+  }
+
+  .localIcon, .phoneIcon {
+    font-size: 14px;
+  }
+
+  .contatoLocal, .contatoPhone {
+    font-size: 12px;
+  }
+
+  .nomeEmpresaDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .nomeContato, .emailContato {
+    width: 80%; 
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    background-color: #212121;
+    color: #ffffff; 
+  }
+
+  .contatoForm {
+    width: 100%; 
+    padding: 0 10px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .nomeEmpresaDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .mensagemDiv {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+  .mensagemContato {
+    width: 80%;
+  }
+
+  .sendButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    padding: 15px 20px; 
+    background-color: #212121;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 3%;
+    transition: 0.3s;
+    border: 1px solid #ffffff;
+  }
+
+  .sendButton:hover {
+    background-color: #18181E;
+    transition: 0.3s;
+    width: 100px;
+  }
+
+  .sendIcon {
+    font-size: 18px;
+    padding-right: 10px;
+    color: #ffffff;
+  }
 }
   
   

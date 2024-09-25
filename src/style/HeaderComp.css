@@ -80,6 +80,7 @@
 */
 
 @media only screen and (min-width: 320px) and (max-width: 541px) {
+
   .text1Header {
     padding-top: 10%;
     color: #ffff;
@@ -127,4 +128,12 @@
     font-size: 30px !important;
     color: #ffff;
   }
+
+  .githubIconMobile:hover, .linkedinIconMobile:hover, .mailIconMobile:hover {
+    text-decoration: none;
+    color: #41ace2;
+    transition: 1.2s;
+  }
+
+  
 }
