@@ -76,7 +76,9 @@
 
 @media only screen and (min-width: 320px) and (max-width: 541px) {
     .header {
-        display: none;
-        overflow: hidden;
+        position: relative;
+       overflow: hidden;
+       display: none;
+       max-width: 100%;
     }
 }
