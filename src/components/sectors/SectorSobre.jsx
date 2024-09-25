@@ -9,7 +9,7 @@ const SectorSobre = () => (
         Olá, meu nome é <strong className='bold'>Wedley Silva Schmoeller</strong>, tenho 19  anos de idade e <strong className='bold'>amo programação</strong>. 
         <div className="textSobre2">
         Sou apaixonado por <strong className='bold'>tecnologia</strong>, <strong className='bold'>softwares</strong> e <strong className='bold'>desenvolvimento</strong> de 
-         soluções práticas, sendo assim programação é a minha área <strong className='bold'>profissional</strong> e meu <strong className='bold'>hobbie</strong>.
+         soluções práticas. Sendo assim, programação é a minha área <strong className='bold'>profissional</strong> e meu <strong className='bold'>hobbie</strong>.
          </div>
         </h3>
         <div className='divImagemSobre'>
