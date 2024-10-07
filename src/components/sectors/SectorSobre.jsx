@@ -6,7 +6,7 @@ const SectorSobre = () => (
         Um pouco mais <br /> sobre mim
         </h2>
         <h3 className="textSobre">
-        Olá, meu nome é <strong className='bold'>Wedley Silva Schmoeller</strong>, tenho 19  anos de idade e <strong className='bold'>amo programação</strong>. 
+        Olá, meu nome é <strong className='bold'>Wedley Silva Schmoeller</strong>, tenho 19  anos de idade.
         <div className="textSobre2">
         Sou apaixonado por <strong className='bold'>tecnologia</strong>, <strong className='bold'>softwares</strong> e <strong className='bold'>desenvolvimento</strong> de 
          soluções práticas. Sendo assim, programação é a minha área <strong className='bold'>profissional</strong> e meu <strong className='bold'>hobbie</strong>.
