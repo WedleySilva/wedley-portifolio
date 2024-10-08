@@ -28,9 +28,9 @@ const SectorSkills = () => {
         </div>
         <div className={`expContent boxContent ${isExpOpen ? "open" : ""}`}>
           <p className="boxPskills">- Engenharia de Software:</p>
-          <p>- 2024 ~ 2027;</p>
+          <p>- Católica SC / 2024 ~ 2027;</p>
           <p className="boxPskills">- Técnico em Informática para Internet:</p>
-          <p>- 2021 ~ 2023;</p>
+          <p>- IFC - Araquari / 2021 ~ 2023;</p>
         </div>
 
         <div className="hardSkills" onClick={toggleHard}>
