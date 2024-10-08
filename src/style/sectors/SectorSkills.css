@@ -91,6 +91,10 @@
   padding: 20px; 
 }
 
+.boxPskills {
+  color: #ffff;
+}
+
 /* Mobile responsiveness */
 @media only screen and (min-width: 320px) and (max-width: 541px) {
   .expSkills,
