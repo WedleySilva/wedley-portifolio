@@ -58,7 +58,7 @@ const SectorContato = () => {
           </div>
           <div className="infoContato">
             <div className="contatoLocal">
-              <GrLocation /> Garuva - SC, Brasil
+              <GrLocation /> Joinville - SC, Brasil
             </div>
             <div className="contatoPhone">
               <BsTelephone /> (47) 99673-1463

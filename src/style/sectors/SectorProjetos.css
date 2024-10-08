@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
-
 .sectorProjetos {
   background-color: #2b2a33;
   margin-bottom: 0;
@@ -81,7 +78,7 @@
 .descricaoProjeto {
   color: #41ace2;
   font-size: 18px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: justify;
 }
 
@@ -253,7 +250,7 @@
   .descricaoProjeto {
     color: #41ace2;
     font-size: 18px;
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Open Sans', sans-serif;
     text-align: justify;
   }
   
