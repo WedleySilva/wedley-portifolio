@@ -14,7 +14,7 @@ const SectorSkills = () => {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "https://firebasestorage.googleapis.com/v0/b/wedley-portifolio.appspot.com/o/PDF%2FDev_Wedley_CV.pdf?alt=media&token=e9d4afb1-01c0-493a-ab96-09cd26543510"; 
+    link.href = "https://firebasestorage.googleapis.com/v0/b/wedley-portifolio.appspot.com/o/PDF%2FWEDLEY-CURRICULO.pdf?alt=media&token=55852c51-89f7-406a-9b62-3d0794f74dde"; 
     link.download = "wedley-cv.pdf"; 
     link.click();
   };
