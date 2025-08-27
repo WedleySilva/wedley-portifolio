@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../../style/sectors/SectorProjetos.css";
 import { IoIosArrowUp } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
-import { SiVercel, SiDjango, SiReact } from "react-icons/si";
+import { SiVercel, SiDjango, SiReact, SiProgress } from "react-icons/si";
 import { IoLogoVue } from "react-icons/io5";
 import { TbBrandReactNative } from "react-icons/tb";
 import { useSwipeable } from "react-swipeable";
@@ -15,7 +15,7 @@ const dadosProjetos = [
     tipo: "Acadêmico",
     imageUrl:
       "https://firebasestorage.googleapis.com/v0/b/wedley-portifolio.appspot.com/o/Projetos%2Fwether_api_screen.png?alt=media&token=e03eb1e0-1694-47ad-8c93-b96c3193ead2",
-    icons: ["github", "vercel", "vue", "django"],
+    icons: ["github", "vercel", "vue"],
     link: "https://wether-project-vue.vercel.app",
     githubRepo: "https://github.com/WedleySilva/projeto-api-vue",
   },
@@ -39,6 +39,16 @@ const dadosProjetos = [
       "https://firebasestorage.googleapis.com/v0/b/wedley-portifolio.appspot.com/o/Projetos%2Fespaco_innovar_screen.png?alt=media&token=217dd6b6-e3d4-482d-8aac-e637a1a55e9f",
     icons: ["github", "reactNative", "django"],
     githubRepo: "https://github.com/WedleySilva/frontend-innovar-react-native",
+  },
+  {
+    titulo: "Hamburgueria XTudo",
+    desc: "Sistema de controle para uma hamburgueria, desenvolvido em Progress 4GL, com foco no gerenciamento de clientes e controle financeiro dos pedidos.",
+    status: "Concluído",
+    tipo: "Pessoal",
+    imageUrl:
+      "https://firebasestorage.googleapis.com/v0/b/wedley-portifolio.appspot.com/o/Projetos%2Fxtudo_progress_screen.png?alt=media&token=33d931a2-5dc0-4b7f-94c4-5537dd4d5bee",
+    icons: ["github", "progress"],
+    githubRepo: "https://github.com/WedleySilva/XTudo---Progress-",
   },
 ];
 
@@ -73,6 +83,8 @@ const SectorProjetos = () => {
         return <SiDjango className="djangobIconProj" />;
       case "reactNative":
         return <TbBrandReactNative className="reactNativebIconProj" />;
+      case "progress":
+        return <SiProgress className="progressbIconProj" />;  
       default:
         return null;
     }

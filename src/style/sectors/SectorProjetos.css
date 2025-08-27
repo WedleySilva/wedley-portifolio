@@ -144,7 +144,7 @@
   transform: rotate(90deg);
 }
 
-.setaIcone:hover, .githubIconProj:hover, .vercelIconProj:hover, .reactIconProj:hover, .vueIconProj:hover, .djangobIconProj:hover, .reactNativebIconProj:hover{
+.icone:hover, .githubIconProj.hover{
     color: #41ace2;
     transition: 1.2s;
 }
@@ -201,10 +201,6 @@
 
 .githubButton:hover {
   background-color: #41ace2;
-}
-
-.githubIconProj:hover {
-  color: #ffff;
 }
 
 .githubButton .githubIconProj {
