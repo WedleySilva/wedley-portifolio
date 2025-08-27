@@ -10,7 +10,7 @@ import { useSwipeable } from "react-swipeable";
 const dadosProjetos = [
   {
     titulo: "Wether API - Foreca",
-    desc: "Site de pesquisa e exibição de clima de várias cidades pelo mundo.",
+    desc: "Site de pesquisa e exibição de clima de várias cidades pelo mundo, desenvolvido em Vue.js com o consumo de uma API externa.",
     status: "Em Refatoração",
     tipo: "Acadêmico",
     imageUrl:
@@ -21,7 +21,7 @@ const dadosProjetos = [
   },
   {
     titulo: "Solve4u - Sistema Web",
-    desc: "Plataforma online desenvolvida para agilizar a gestão de projetos, proporcionando uma abordagem organizada e eficiente na coordenação de tarefas e membros da equipe.",
+    desc: "Plataforma online desenvolvida para agilizar a gestão de projetos, proporcionando uma abordagem organizada e eficiente na coordenação de tarefas e membros da equipe. Projeto está sendo desenvolvido com React.js.",
     status: "Em Desenvolvimento",
     tipo: "Pessoal",
     imageUrl:
@@ -32,7 +32,7 @@ const dadosProjetos = [
   },
   {
     titulo: "Espaço Innovar  App",
-    desc: "Aplicativo que gerencia agenda e organiza para uma cliníca de estética.",
+    desc: "Aplicativo via React Native em conjunto com um site desenvolvido em Vue.js, ambos consultando um backend Django e com isso gerenciando e organizando a agenda de uma cliníca de estética.",
     status: "Concluído",
     tipo: "Pessoal",
     imageUrl:
