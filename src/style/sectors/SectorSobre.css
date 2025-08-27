@@ -27,6 +27,7 @@
 .bold {
   font-weight: 300;
   color: #41ace2;
+  word-spacing: -1px;
 }
 
 .textSobre2 {

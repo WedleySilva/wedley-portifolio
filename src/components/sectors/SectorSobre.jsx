@@ -11,13 +11,15 @@ const SectorSobre = () => (
       de idade e sou desenvolvedor Full Stack.
       <div className="textSobre2">
         <span>
-          Tenho uma paixão imensa por tecnologia e desenvolvimento de software,
-          abrangendo desde o planejamento de soluções práticas e eficientes até
-          a experiencia do usúario.
+          Sou formado em <strong className="bold">Informática para Internet</strong> e atualmente curso <strong className="bold">Engenharia de Software</strong>. 
+          Tenho experiência no desenvolvimento de aplicativos e sistemas web, integração com APIs, criação 
+          e gerenciamento de bancos de dados, realização de testes de software e manipulação de backends. 
+
         </span>
       </div>
       <div className="textSobre3">
         <span>
+          Além disso, atuo na prototipagem e elaboração de soluções completas voltadas à engenharia de software.
           Sendo assim, projetar e desenvolver softwares é o meu ponto forte.
         </span>
       </div>
