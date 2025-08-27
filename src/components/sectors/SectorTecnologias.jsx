@@ -1,6 +1,6 @@
 import "../../style/sectors/SectorTecnologias.css";
 import { FaFigma } from "react-icons/fa6";
-import { SiCanva, SiMiro, SiPython, SiReact } from "react-icons/si";
+import { SiCanva, SiMiro, SiPython, SiReact, SiProgress } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { TbBrandDjango, TbBrandReactNative } from "react-icons/tb";
 import { IoLogoVue } from "react-icons/io5";
@@ -18,50 +18,57 @@ const SectorTecnologias = () => (
       Linguagens, librarys, framework e prototipagem.
     </p>
     <div className="tecnologias">
+      {/* FRONTEND */}
       <div className="frontendDiv">
         <h2 className="frontendTitle">Front-End</h2>
         <div className="iconsFrontend">
           <div className="tecnologiaItem">
             <div className="tecnologiaRow">
-              <IoLogoVue className="vueIcon" />
-              <span className="tecnologiaText">Vue.js</span>
+              <div className="vueIcon">
+                <IoLogoVue />
+                <span>Vue.js</span>
+              </div>
             </div>
-            <div className="vuePct">98%</div>
           </div>
           <div className="tecnologiaItem">
             <div className="tecnologiaRow">
-              <SiReact className="reactIcon" />
-              <span className="tecnologiaText">React.js</span>
+              <div className="reactIcon">
+                <SiReact />
+                <span>React.js</span>
+              </div>
             </div>
-            <div className="reactPct">98%</div>
           </div>
           <div className="tecnologiaItem">
             <div className="tecnologiaRow">
-              <TbBrandReactNative className="reactnativeIcon" />
-              <span className="tecnologiaText">React Native</span>
+              <div className="reactnativeIcon">
+                <TbBrandReactNative />
+                <span>React Native</span>
+              </div>
             </div>
-            <div className="reactnativePct">90%</div>
           </div>
           <div className="tecnologiaItem">
             <div className="tecnologiaRow">
-              <IoLogoHtml5 className="htmlIcon" />
-              <span className="tecnologiaText">HTML5</span>
+              <div className="htmlIcon">
+                <IoLogoHtml5 />
+                <span>HTML5</span>
+              </div>
             </div>
-            <div className="htmlPct">100%</div>
           </div>
           <div className="tecnologiaItem">
             <div className="tecnologiaRow">
-              <FaCss3Alt className="cssIcon" />
-              <span className="tecnologiaText">CSS3</span>
+              <div className="cssIcon">
+                <FaCss3Alt />
+                <span>CSS3</span>
+              </div>
             </div>
-            <div className="cssPct">100%</div>
           </div>
           <div className="tecnologiaItem">
             <div className="tecnologiaRow">
-              <RiJavascriptFill className="javascriptIcon" />
-              <span className="tecnologiaText">JavaScript</span>
+              <div className="javascriptIcon">
+                <RiJavascriptFill />
+                <span>JavaScript</span>
+              </div>
             </div>
-            <div className="javascriptPct">100%</div>
           </div>
         </div>
       </div>
@@ -70,24 +77,35 @@ const SectorTecnologias = () => (
         <div className="iconsBackend">
           <div className="tecnologiaItem">
             <div className="tecnologiaRow">
-              <GrMysql className="mysqlIcon" />
-              <span className="tecnologiaText">MySQL</span>
+              <div className="mysqlIcon">
+                <GrMysql />
+                <span>MySQL</span>
+              </div>
             </div>
-            <div className="mysqlPct">95%</div>
           </div>
           <div className="tecnologiaItem">
             <div className="tecnologiaRow">
-              <TbBrandDjango className="djangoIcon" />
-              <span className="tecnologiaText">Django</span>
+              <div className="djangoIcon">
+                <TbBrandDjango />
+                <span>Django</span>
+              </div>
             </div>
-            <div className="djangoPct">80%</div>
           </div>
           <div className="tecnologiaItem">
             <div className="tecnologiaRow">
-              <SiPython className="pythonIcon" />
-              <span className="tecnologiaText">Python</span>
+              <div className="pythonIcon">
+                <SiPython />
+                <span>Python</span>
+              </div>
             </div>
-            <div className="pythonPct">90%</div>
+          </div>
+          <div className="tecnologiaItem">
+            <div className="tecnologiaRow">
+              <div className="progressIcon">
+                <SiProgress />
+                <span>Progress OpenEdge</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -96,24 +114,27 @@ const SectorTecnologias = () => (
         <div className="iconsPrototipagem">
           <div className="tecnologiaItem">
             <div className="tecnologiaRow">
-              <FaFigma className="figmaIcon" />
-              <span className="tecnologiaText">Figma</span>
+              <div className="figmaIcon">
+                <FaFigma />
+                <span>Figma</span>
+              </div>
             </div>
-            <div className="figmaPct">90%</div> 
           </div>
           <div className="tecnologiaItem">
             <div className="tecnologiaRow">
-              <SiCanva className="canvaIcon" />
-              <span className="tecnologiaText">Canva</span>
+              <div className="canvaIcon">
+                <SiCanva />
+                <span>Canva</span>
+              </div>
             </div>
-            <div className="canvaPct">95%</div>
           </div>
           <div className="tecnologiaItem">
             <div className="tecnologiaRow">
-              <SiMiro className="miroIcon" />
-              <span className="tecnologiaText">Miro</span>
+              <div className="miroIcon">
+                <SiMiro />
+                <span>Miro</span>
+              </div>
             </div>
-            <div className="miroPct">80%</div>
           </div>
         </div>
       </div>
